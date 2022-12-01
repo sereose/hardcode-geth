@@ -34,5 +34,5 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build image
       run: |
-          ocker build -t blockchain-node-lite:latest -f devops/docker-compose/blockchain-node-lite/Dockerfile devops/docker-compose/blockchain-node-lite/. 
+          docker build -t blockchain-node-lite:latest -f devops/docker-compose/blockchain-node-lite/Dockerfile devops/docker-compose/blockchain-node-lite/. 
           docker push blockchain-node-lite:latest
