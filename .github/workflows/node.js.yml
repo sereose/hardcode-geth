@@ -13,9 +13,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./devops/docker-compose/blockchain-node-lite
+#    defaults:
+#      run:
+#        working-directory: ./devops/docker-compose/blockchain-node-lite
 
     steps:
 
