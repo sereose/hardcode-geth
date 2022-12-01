@@ -32,9 +32,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-
     - name: Build image
-      env:
-        run: |
+      run: |
           docker build  -t nodejs-demo:latest  -f /devops/docker-compose/blockchain-node-lite  . 
           docker push nodejs-demo:latest
