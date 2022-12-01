@@ -35,4 +35,4 @@ jobs:
     - name: Build image
       run: |
           docker build -t blockchain-node-lite:latest -f devops/docker-compose/blockchain-node-lite/Dockerfile devops/docker-compose/blockchain-node-lite/. 
-          docker push blockchain-node-lite:latest
+          docker push expouser/blockchain-node-lite:latest
